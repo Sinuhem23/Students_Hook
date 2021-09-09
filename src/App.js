@@ -9,7 +9,7 @@ Renders the student's name & bio properties
 Renders a <Score> component for each score object in the student's scores property.
 Code the <Score> component so that it renders the score object's date & score properties. */
 
-  const [studentData, setStudentData] = useState({
+  const [studentData] = useState({
     students: [
       {
         name: 'Cait Yomorta',
