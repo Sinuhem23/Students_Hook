@@ -9,10 +9,10 @@ function Student(props) {
         console.log(studentData.name);
         console.log(studentData.scores);
         return (
-          <div id={'stu' + idx} key={idx}>
-            <h1> Welcome {studentData.name}!</h1>
-            <h1> Bio: [{studentData.bio}]</h1>
-            <h2>Scores</h2>
+          <div className='' key={idx}>
+            <h2>{'Welcome ' + studentData.name + '! '}</h2>
+            <h3>{' Bio: ' + [studentData.bio]}</h3>
+            <h4>Scores</h4>
             <div>
               <Score object={studentData} />
             </div>
