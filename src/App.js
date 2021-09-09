@@ -13,7 +13,7 @@ Code the <Score> component so that it renders the score object's date & score pr
     students: [
       {
         name: 'Cait Yomorta',
-        bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. ',
+        bio: 'Lorem ipsum, dolor sit amet. ',
         scores: [
           {
             date: '2018-02-08',
@@ -31,7 +31,7 @@ Code the <Score> component so that it renders the score object's date & score pr
       },
       {
         name: 'Holly Baird',
-        bio: ' Eos id possimus accusantium, earum animi modi hic.',
+        bio: ' Eos id possimus accusantium.',
         scores: [
           {
             date: '2018-12-14',
