@@ -1,17 +1,17 @@
 import React from 'react';
 
 function Student(props) {
-  props.all_students.forEach((studentData) => {
-    // console.log(props.all_students);
-    console.log(studentData.name);
-    console.log(studentData.bio);
-
-    // setStudentData(studentData);
-    // return <Student all_students={studentData} />;
-  });
   return (
     <div>
-      <h1> Hello {props.all_students.name}!</h1>
+      {props.all_students.map((studentData) => {
+        // console.log(props.all_students);
+        console.log(studentData.name);
+        console.log(studentData.scores);
+        return <h1> Hello {studentData.name}!</h1>;
+
+        // setStudentData(studentData);
+        // return <Student all_students={studentData} />;
+      })}
       <h1> Hello !</h1>
     </div>
   );
