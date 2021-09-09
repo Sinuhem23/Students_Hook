@@ -1,8 +1,8 @@
 import './App.css';
-import React, { Component } from 'react';
+import { useState } from 'react';
 
-export class App extends Component {
-  state = {
+function App() {
+  const [studentData, setStudentData] = useState({
     students: [
       {
         name: 'Cait Yomorta',
@@ -63,14 +63,13 @@ export class App extends Component {
         ],
       },
     ],
-  };
-  render() {
-    return (
-      <div className='App'>
-        <h1>hello</h1>
-      </div>
-    );
-  }
+  });
+
+  return (
+    <div className='App'>
+      <h1>hello</h1>
+    </div>
+  );
 }
 
 export default App;
