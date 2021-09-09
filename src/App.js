@@ -1,7 +1,14 @@
 import './App.css';
 import { useState } from 'react';
+import Student from './Student';
 
 function App() {
+  /* Code the <App> App component to display a <Student> component for each student object in the students array being held in state.
+Code the <Student> component so that it:
+Renders the student's name & bio properties
+Renders a <Score> component for each score object in the student's scores property.
+Code the <Score> component so that it renders the score object's date & score properties. */
+
   const [studentData, setStudentData] = useState({
     students: [
       {
@@ -67,7 +74,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>hello</h1>
+      <Student all_students={studentData.students} />
     </div>
   );
 }
